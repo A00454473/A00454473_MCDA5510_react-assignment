@@ -7,12 +7,12 @@ function About() {
 
       <p>
         I'm a Software Engineer and Data Analyst currently pursuing <br/>
-        Master of Science in Computing and Data Analytics at Saint Mary's Univeristy, NS, Canada.
+        Master of Science in Computing and Data Analytics at Saint Mary's University, NS, Canada.
       </p>
       <br/>
       <p>
-        I have a brief experience in both Software and Data and want to further my knowledge on
-        how I can take leverage of both to solve real-world problems which led me to choose the MCDA program.
+        I have brief experiences in both Software and Data and want to further my knowledge on
+        how I can leverage the power of both domains to solve real-world problems which led me to choose the MCDA program.
       </p>
     </div>
   );
