@@ -1,10 +1,12 @@
-# React Workshop Assignment - by Rishan Mascarenhas - A00454473
+# React Workshop Assignment
+### ---------------------------------
+### By Rishan Mascarenhas - A00454473
 
 This is an Assignment for React Workshop.
 
 The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to Run on localhost
 
 In the project directory, you can run:
 
