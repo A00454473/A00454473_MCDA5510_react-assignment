@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+
 import './App.css';
+import './about';
+import About from './about';
+import City from './city';
 
 function App() {
+
+  const [nav, setNav] = useState("about");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+
+      <div className="navigation">
+        <a className={nav === "about" ? "active":""} href="#" onClick={() => setNav("about")}>
+          About Me
         </a>
-      </header>
+        <a className={nav === "city" ? "active":""} href="#" style={{marginLeft: '2em'}}
+              onClick={() => setNav("city")}>
+          My City
+        </a>
+      </div>
+
+      <div style={{paddingTop: '5em', textAlign: 'center'}}>
+        {nav === "about" ? <About></About> : <City></City>}
+      </div>
+      
     </div>
   );
 }
