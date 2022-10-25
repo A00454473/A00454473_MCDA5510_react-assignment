@@ -1,6 +1,6 @@
 # React Workshop Assignment
-### ---------------------------------
 ### By Rishan Mascarenhas - A00454473
+
 
 This is an Assignment for React Workshop.
 
