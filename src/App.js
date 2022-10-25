@@ -13,10 +13,10 @@ function App() {
     <div>
 
       <div className="navigation">
-        <a className={nav === "about" ? "active":""} href="#" onClick={() => setNav("about")}>
+        <a className={nav === "about" ? "active":""} href="/#" onClick={() => setNav("about")}>
           About Me
         </a>
-        <a className={nav === "city" ? "active":""} href="#" style={{marginLeft: '2em'}}
+        <a className={nav === "city" ? "active":""} href="/#" style={{marginLeft: '2em'}}
               onClick={() => setNav("city")}>
           My City
         </a>

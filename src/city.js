@@ -31,27 +31,28 @@ function City() {
   },[])
 
   return (
-    <div className="App ">
-      <img className="city_img" src={city_img} alt="Mumbai"/>
-      <h1>I'm from Mumbai, India</h1>
+    <div className="flex-container">
+      <div>
+        <img className="city_img" src={city_img} alt="Mumbai"/>
+        <h1>I'm from Mumbai, India</h1>
 
-      <p>
-        City of Mumbai is located at the west coast of India. 
-        <br/>
-        It is one of the biggest city and the financial capital of India.
-      </p>
+        <p>
+          City of Mumbai is located at the west coast of India. 
+          <br/>
+          It is one of the biggest city and the financial capital of India.
+        </p>
+      </div>
 
       <br/>
 
-      <h1>Weather in Mumbai</h1>
       <div className="weather">
+      <h1>Weather in Mumbai</h1>
         {tempInC <= 10 ? <img src={cold} alt="cold"/> : tempInC > 10 && tempInC <= 20 ? <img src={mild} alt="mild"/> : <img src={sunny} alt="sunny"/>}
         <p>
           <b>Temperature: </b> 
           {tempMetric === "c" ? temp.toFixed(2) : ((temp.toFixed(2)*9)/5) + 32} {tempMetric === "c" ? "C" : "F"}
         </p>
         {tempMetric === "c" ? <h3 onClick={() => setTempMetric("f")}>Switch to F</h3> : <h3 onClick={() => setTempMetric("c")}>Switch to C</h3>}
-        
       </div>
     </div>
   );
